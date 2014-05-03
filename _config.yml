@@ -1,14 +1,6 @@
 baseurl: /Blog
-title: Title of blog
-subtitle: Subtitle of blog
-link: Homepage link
-meta:
-  description: Content of description meta tag
-  keywords: !!seq
-    - keyword1
-    - keyword2
-    - keyword3
-  author: Content of author meta tag
+title: Jot it down
+subtitle: keep coding, keep thinking
 master:
   name: Your name
   about: Introduce yourself here

@@ -1,18 +1,29 @@
----
-layout: index
-title: 我的Blog
----
+{% include header.html %}
+<div id="main">
+    <div id="main-inner">
+        <div id="topnav">
+            <ul>
+                <li><a href="{{ site.baseurl }}">首页</a></li>
+                <li class="sep"> | </li>
+                <li><a href="/tag.html">标签</a></li>
+            </ul>
+            <div style="clear:both;"></div>
+        </div>
+        <div id="aboutme"><p>关于我</p></div>
+        <div id="tag-cloud">
+标签云
+            <div style="clear:both;"></div>
+        </div>
+        <div id="article-blocks">
+          {% for post in site.posts %}
+            <div class="article-block">
+            <p class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
+            <p class="abstract">&lt;摘要&gt;: {{post.content | split:'<!--more-->' |first}}</p>
+             <p class="meta">发布于 {{ post.date | date_to_string }} | Tags 
+                </p>
 
-    　　<h2>{{ page.title }}</h2>
-
-    　　<p>最新文章</p>
-
-    　　<ul>
-
-    　　　　{% for post in site.posts %}
-
-    　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-
+        </div>
     　　　　{% endfor %}
-
-    　　</ul>
+    </div>
+</div>
+{% include footer.html %}
