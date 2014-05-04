@@ -16,7 +16,3 @@ copyright:
   endYear: 2013
 theme: default
 codetheme: night
-comments :
-  provider : disqus
-  disqus :
-    short_name : codeongit
