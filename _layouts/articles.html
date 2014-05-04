@@ -16,7 +16,9 @@
             发布于 {{ page.date | date_to_string }} 
         </div>
         <div id="article-tags">
-标签
+       {% for tag in page.tags %}
+        <a class="tag" href="/tag.html#{{tag}}">{{tag}}</a>
+        {% endfor %}
         </div>
         <div id="article-content">
             {{ content }}
