@@ -1,6 +1,6 @@
 ---
 layout: articles
-title: Guava学习-Null对象的处理
+title: Guava学习-Null的处理
 tags: [java,Guava]
 ---
 近期由于部门变动，被分到了一个新的项目中。只想感叹一句，终于有机会可以写代码了...从升本到现在工作1年，仔细算算已经有3年没有好好的写过代码了.工作的这一年中(省略)。接下来想利用参加这个新项目的机会，把前面学到的东西运用到实践中去。前些时候偶然发现了Guava这个东东。经过一些了解以后，不但刷新了我对编程的理解，也激起了我对函数式的编程的兴趣。虽然java中的函数式编程问题还很多，但不妨碍Guava这个优秀的类库给程序的可读性、可维护性、可扩展性带来的提升。官方文档 [GuavaExplained](https://code.google.com/p/guava-libraries/wiki/GuavaExplained) 老是被墙 :(
