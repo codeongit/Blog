@@ -17,6 +17,6 @@ tags: [java,Guava]
 
 **Strings类中也有一些处理字符串为Null的方法**。但是要注意的是，不应该将Null和空字符串混为一谈。这样容易造成逻辑上的混乱，从而不便于维护和容易产生Bug。
 
-**比较两个对象时**，往往也要考虑对象为Null的情况。Guava中提供了Objects.equal方法来处理比较对象为Null的情况，对应于JDK7里的 Objects.equals 方法。
+**实现Object.equals方法时**，往往也要考虑对象为Null的情况。Guava中提供了Objects.equal方法来处理比较对象为Null的情况，对应于JDK7里的 Objects.equals 方法。
 
 先写这么多。
