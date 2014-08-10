@@ -18,15 +18,15 @@ tags: [work,summary]
 
 - - -
 
-单位：123
+	单位：123
 
-公司：321
+	公司：321
 
-| 我是  | 标题 | 我是    | 动态的列  |
-|-------|:---:|-----------|-------:|
-| rhio  | 1 | robot     | 3000 |
-| haroo | 3  | bird      | 430   |
-| 我 | 是   | 动态 | 的行     |
+	| 我是  | 标题 | 我是    | 动态的列  |
+	|-------|:---:|-----------|-------:|
+	| rhio  | 1 | robot     | 3000 |
+	| haroo | 3  | bird      | 430   |
+	| 我 | 是   | 动态 | 的行     |
 
 - - -
 
@@ -34,21 +34,21 @@ tags: [work,summary]
 
 - - -
 
-定义一个变量parseState最好是用枚举类型,初始状态init。还是从左上角开始扫描单元格。
-loop excel
-if parseState=init
-  解析单位
-  将parseState置为cop
-else if parseState=cop
-  解析公司
-  将parseState置为title
-else if parseState=title
-  解析标题
-  将parseState置为data
-else if parseState=data
-  根据动态表头解析表格
-  将parseState置为init
-end loop
+	定义一个变量parseState最好是用枚举类型,初始状态init。还是从左上角开始扫描单元格。
+	loop excel
+	if parseState=init
+	  解析单位
+	  将parseState置为cop
+	else if parseState=cop
+	  解析公司
+	  将parseState置为title
+	else if parseState=title
+	  解析标题
+	  将parseState置为data
+	else if parseState=data
+	  根据动态表头解析表格
+ 	  将parseState置为init
+	end loop
 
 - - -
 
