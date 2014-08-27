@@ -19,4 +19,5 @@ tags: [java,Guava]
 
 **实现Object.equals方法时**，往往也要考虑对象为Null的情况。Guava中提供了Objects.equal方法来处理比较对象为Null的情况，对应于JDK7里的 Objects.equals 方法。
 
-先写这么多。
+**使用NULL对象统一接口调用** 详见《重构》引入NULL对象一节。
+使用起来其实还是有点麻烦，和编程习惯有关。
